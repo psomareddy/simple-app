@@ -8,7 +8,7 @@ simple-java-app is a java application built using gradle. You can build a jar fi
 git clone https://github.com/psomareddy/simple-java-app.git
 cd simple-java-app
 ./gradlew clean build
-java -jar build/libs/*.jar
+java -jar build/libs/simple-java-app.jar
 ```
 
 ## Instrument the app with OpenTelemetry Java Auto Instrumentation
