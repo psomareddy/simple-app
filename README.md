@@ -44,7 +44,7 @@ OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
 3. Set the -javaagent argument to the path of the Java agent. I also include the otel.instrumentation.methods.include directive to instrument our getGreeting method in the App class.
 
 ```
-java  -javaagent:/opt/otel/splunk-otel-javaagent.jar  -Dotel.instrumentation.methods.include=com.simple.app.App[getGreeting] -jar build/libs/*.jar 
+java  -javaagent:./splunk-otel-javaagent.jar "-Dotel.instrumentation.methods.include=com.simple.app.App[getGreeting]" -jar ./build/libs/simple-java-app.jar
 ```
 
 
