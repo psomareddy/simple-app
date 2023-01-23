@@ -37,7 +37,7 @@ curl -L https://github.com/signalfx/splunk-otel-java/releases/latest/download/sp
 
 ```
 OTEL_SERVICE_NAME=simple-java-app
-OTEL_RESOURCE_ATTRIBUTES=deployment.environment=simple-env
+OTEL_RESOURCE_ATTRIBUTES='deployment.environment=dev'
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
 ```
 
